@@ -16,3 +16,8 @@ npm install
 node index
 
 ```
+
+## 页面
+支付宝 | 微信
+------|------
+![](./public/img/1.png) | ![](./public/img/1.png)
