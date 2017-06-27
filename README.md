@@ -19,5 +19,5 @@ node index
 
 ## 部分页面
 
-![](./public/img/1.png) | ![](./public/img/3.png) 
-![](./public/img/2.png) | ![](./public/img/4.png)
+![](./public/img/1.png) | ![](./public/img/3.jpg) 
+![](./public/img/2.png) | ![](./public/img/4.jpg)
