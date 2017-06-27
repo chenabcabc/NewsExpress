@@ -18,7 +18,7 @@ node index
 ```
 
 ## 部分页面
-首页
+支付宝 | 微信
 ------|------
 ![](./public/img/1.png) | ![](./public/img/3.jpg) 
 ![](./public/img/2.png) | ![](./public/img/4.jpg)
