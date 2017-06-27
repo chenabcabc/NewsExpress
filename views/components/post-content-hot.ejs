@@ -1,0 +1,47 @@
+<div class="post-content hotttt">
+  
+  <div class="row">
+
+    <div class="col-md-12 card hotcard">
+
+      <div class="hotcardimg">
+        <a href="/posts/<%= post._id %>">
+          <img class="img-responsive center-block postphoto" src="/img/<%= post.photo %>">
+        </a>
+      </div>  
+
+        <div class="hottitle">
+            <h3><a href="/posts/<%= post._id %>"><%= post.title %></a></h3>
+            <p><%- post.vicetitle %></p>
+        </div>    
+
+        <div class="row cardrightbtm hidden-xs">
+
+          <div class="col-xs-3 newseditor">
+            <a href="/posts?author=<%= post.author._id %>">
+              <img class="img-responsive center-block img-circle avaimg" src="/img/<%= post.author.avatar %>"><span><%= post.author.name %></span>
+            </a>
+          </div>
+
+          <div class="col-xs-4 newstime">
+            <span class="tag"><%= post.created_at %></span>
+          </div>
+
+          <div class="col-xs-4 newsedit"> 
+            <span>浏览(<%= post.pv %>)</span>
+            <% if (user && post.author._id && user._id.toString() === post.author._id.toString()) { %>
+                  <span><a href="/posts/<%= post._id %>/edit">编辑</a></span>
+                  <span><a href="/posts/<%= post._id %>/remove">删除</a></span>
+            <% } %>
+            </span>
+          </div>
+        </div>                      
+
+      
+
+
+    </div>
+  </div>
+</div>
+    
+

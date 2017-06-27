@@ -1,0 +1,40 @@
+<div class="post-content-single container-fluid">
+  <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 singlecontent">
+    
+      <div class="singletitle">
+        <h3><%= post.title %></h3>
+        <p><%- post.vicetitle %></p>
+      </div>
+
+      <div class="row singlerightbtm">
+          <div class="col-xs-5  col-sm-4  col-md-4  sinnewseditor">
+            <a href="/posts?author=<%= post.author._id %>">
+              <img class="img-responsive center-block img-circle sinavaimg" src="/img/<%= post.author.avatar %>"><span><%= post.author.name %></span>
+            </a>
+          </div>
+          <div class="col-xs-7 col-sm-4 col-md-4 sinnewstime">
+            <span class="tag"><%= post.created_at %></span>
+          </div>
+          <div class="col-xs-3 col-sm-4 col-md-4 sinnewsedit hidden-xs"> 
+            <span>浏览(<%= post.pv %>)</span>
+            <% if (user && post.author._id && user._id.toString() === post.author._id.toString()) { %>
+                  <span><a href="/posts/<%= post._id %>/edit">编辑</a></span>
+                  <span><a href="/posts/<%= post._id %>/remove">删除</a></span>
+            <% } %>
+            </span>
+          </div>
+      </div>
+   
+    <div class="sinphoto row">
+      <img class="img-responsive center-block" src="/img/<%= post.photo %>">
+    </div>
+       
+    <div class="postcontent">
+      <%- post.content %>
+    </div>
+      
+    
+    
+    
+  </div>
+</div>

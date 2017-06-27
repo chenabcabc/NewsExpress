@@ -1,0 +1,47 @@
+<%- include('header') %>
+
+<div class="container shouyecontainer">
+
+<div class="row">
+	<div class="col-md-8 col-sm-8 col-xs-12 postsleft">
+		
+<% posts.forEach(function (post) { %>
+
+<% if (post.hotnews=='t') { %>
+<%- include('components/post-content-hot', { post: post }) %>	
+<% } %>
+
+<% if (post.hotnews!=='t') { %>
+<%- include('components/post-content', { post: post }) %>	
+<% } %>
+
+<% }) %>
+
+	</div>
+
+
+	<div class="col-md-4 col-sm-4 postsright hidden-xs">
+	<div class="postsrightbox">
+	<h4>热门新闻</h4>
+		
+<% posts.forEach(function (post) { %>
+
+<% if (post.pv>=5) { %>
+<%- include('components/post-content-top', { post: post }) %>	
+<% } %>
+
+<% }) %>
+
+
+	</div>
+	</div>
+</div>
+
+
+</div>
+
+	
+
+<%- include('footer') %>
+
+

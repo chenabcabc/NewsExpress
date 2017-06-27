@@ -1,0 +1,46 @@
+<div class="post-content">
+  
+  <div class="row">
+
+    <div class="col-md-12 card">
+    <div class="row">
+      <div class="col-md-5 col-sm-5 col-xs-5 cardleft">
+        <a href="/posts/<%= post._id %>">
+          <img class="img-responsive center-block postphoto" src="/img/<%= post.photo %>">
+        </a>
+      </div>
+      <div class="col-md-7 col-sm-7 col-xs-7 cardright">
+        <div class="tilandvi">
+            <h3><a href="/posts/<%= post._id %>"><%= post.title %></a></h3>
+            <p class="hidden-xs"><%- post.vicetitle %></p>
+        </div>
+
+        <div class="row cardrightbtm hidden-xs cardrightbtmnor">
+
+          <div class="col-xs-4 newseditor">
+            <a href="/posts?author=<%= post.author._id %>">
+              <img class="img-responsive center-block img-circle avaimg" src="/img/<%= post.author.avatar %>"><span><%= post.author.name %></span>
+            </a>
+          </div>
+
+          <div class="col-xs-4 newstime">
+            <span class="tag"><%= post.created_at %></span>
+          </div>
+
+          <div class="col-xs-4 newsedit"> 
+            <span>浏览(<%= post.pv %>)</span>
+            <% if (user && post.author._id && user._id.toString() === post.author._id.toString()) { %>
+                  <span><a href="/posts/<%= post._id %>/edit">编辑</a></span>
+                  <span><a href="/posts/<%= post._id %>/remove">删除</a></span>
+            <% } %>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    
+
+  </div>  
+</div>

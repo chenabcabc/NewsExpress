@@ -1,0 +1,40 @@
+<nav class="navbar navbar-default navbar-fixed-top navnav">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-1 col-sm-1 col-xs-1">
+
+<div class="btn-group nav-setting">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+
+  </button>
+  <ul class="dropdown-menu ddm">
+        <% if (user) { %>
+          <li><a class="item" href="/posts?author=<%= user._id %>">个人新闻</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a class="item" href="/posts/create">发布新闻</a></li>
+          <li><a class="item" href="/signout">登出</a></li>
+        <% } else { %>
+          <li><a class="item" href="/signin">登录</a></li>
+          <li><a class="item" href="/signup">注册</a></li>
+        <% } %>
+  </ul>
+</div>
+
+
+				
+			</div>
+			<div class="col-md-8 col-md-offset-1 col-sm-8 col-sm-offset-1 col-xs-8 col-xs-offset-1">
+				<a href="/posts">
+					<img class="img-responsive center-block logo" src="/img/newslogo.png">
+				</a>
+			</div>
+		</div>
+		
+
+
+
+
+	</div>
+</nav>
+

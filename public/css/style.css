@@ -1,0 +1,615 @@
+/* ---------- 全局样式 ---------- */
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 80px;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+      padding-top: 60px;
+    }
+}
+
+a:hover {text-decoration:none;} 
+
+.button {
+  background-color: #4fc08d !important;
+  color: #fff !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .shouyecontainer {
+    width: 1000px;
+  }
+}
+
+.postsleft {
+  padding-right: 15px;
+}
+
+.postsright {
+  padding-left: 20px;
+  margin-top: 16px;
+}
+
+
+
+
+/* ---------- nav ---------- */
+.navnav {
+  background-color: #005689 !important;
+  border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+  box-shadow: 0 1px 0 rgba(173,168,168,0.1), 0 2px 1px rgba(181,179,179,0.1);
+}
+
+.nav {
+  margin-bottom: 20px;
+  color: #999;
+  text-align: center;
+}
+
+.nav h1 {
+  color: #000000;
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.logo {
+  height: 80px;
+}
+
+@media screen and (max-width: 767px) {
+    .logo {
+      height: 55px;
+    }
+}
+
+/* ---------- nav-setting ---------- */
+
+.nav-setting {
+  margin: 20px;
+  z-index: 999;
+}
+
+@media screen and (max-width: 767px) {
+    .nav-setting {
+      display: none;
+    }
+}
+
+.ddm {
+  min-width: inherit;
+}
+
+/* ---------- notification ---------- */
+
+.notification {
+  text-align: center;
+  height: 5px;
+}
+
+/* ---------- post-content ---------- */
+.card {
+    box-shadow: 0 1px 1px rgba(173,168,168,0.1);
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: #fff;
+    border-radius: 3px;
+    height: 200px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+      height: 92px;
+      border: none;
+      border-radius: 0;
+    }
+}
+
+.postphoto {
+  height: 198px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .postphoto {
+    height: 92px;
+    }
+}
+
+.cardleft{
+}
+
+.cardright {
+  padding-left: 7.5px;
+}
+
+@media screen and (max-width: 767px) {
+    .cardright {
+    padding-left: 0;
+    }
+}
+
+.tilandvi {
+  height: 140px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .tilandvi {
+    height: initial;
+    margin: auto;
+    overflow: hidden;
+    }
+}
+
+.tilandvi h3{
+  height: 60px;
+  margin-top: 1rem;
+  line-height: 2.5rem;
+  font-size: 22px;
+  font-weight: 600;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .tilandvi h3 {
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    line-height: 2rem;
+    font-size: 15px;
+    font-weight: 500;
+    overflow: hidden;
+    height: 70px;
+    }
+}
+ 
+.tilandvi p{
+  color: #666;
+}
+
+.tilandvi a {
+  color: #222;
+}
+
+.tilandvi a:hover {
+    color: #0f65ef;
+    transition: color .15s ease 0s;
+}
+
+.tilandvi p{
+  height: 6rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.cardrightbtm {
+  height: 40px;
+  color: #999;
+}
+
+.cardrightbtmnor {
+  margin-right: 0;
+  font-size: 13px;
+}
+
+.avaimg {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1rem;
+  vertical-align:middle;
+  display: inline-block;
+}
+
+.cardrightbtmnor .avaimg {
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.cardrightbtmnor .newstime {
+  padding: 0;
+}
+
+.cardrightbtmnor .newsedit {
+  padding-left: 0;
+  text-align: right;
+  padding-right: 23px;
+}
+
+.post-content {
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    .post-content {
+      margin-top: 10px;
+    }
+}
+
+.post-content .title {
+  text-align: center;
+}
+
+.post-content h3 a {
+  // color: #4fc08d !important;
+}
+
+.post-content .tag {
+  // font-size: 13px;
+  // margin-right: 5px;
+  color: #999;
+}
+
+.post-content .tag.right {
+  float: right;
+  margin-right: 0;
+}
+
+.post-content .tag.right a {
+  color: #999;
+}
+
+.newseditor,.newstime,.newsedit {
+  height: 40px;
+  margin: auto 0;
+  line-height: 40px; /*设置line-height与父级元素的height相等*/
+  // text-align: center; /*设置文本水平居中*/
+  overflow: hidden; /*防止内容超出容器或者产生自动换行*/
+}
+
+.newseditor a {
+  color: #999;
+}
+
+.newseditor a:hover {
+  color: #222;
+}
+
+/* ---------- post-content-hot ---------- */
+.hotcard {
+  height: 415px;
+}
+
+.hotcard .postphoto {
+  height: 240px;
+}
+
+.hottitle {
+  margin: 10px 30px 0 25px;
+  height: 112px;
+  overflow: hidden;
+}
+
+.hottitle h3 {
+  height: 35px;
+  font-size: 27px;
+  margin-top: 1.2rem;
+  margin-bottom: 8px;
+  line-height: 3rem;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.hottitle p {
+  height: 4.8rem;
+  font-size: 1.7rem;
+  line-height: 2.4rem;
+  margin: 0;
+  overflow: hidden;
+}
+
+.hotcard .cardrightbtm {
+  margin-right: 30px;
+  margin-left: 15px;
+}
+
+.hotcard .newsedit {
+  float: right;
+  text-align: right;
+}
+
+.hottitle p{
+  color: #666;
+}
+
+.hottitle a {
+  color: #222;
+}
+
+.hottitle a:hover {
+    color: #0f65ef;
+    transition: color .15s ease 0s;
+}
+
+/* ---------- post-content-top ---------- */
+.postsrightbox {
+  border-top: 8px solid #0C82E8;
+  color: #0C82E8;
+  border-radius: 3px 3px 0 0 !important;
+  background-color: #fff;
+  padding-bottom: 1px;
+}
+
+.postsrightbox h4 {
+  margin-left: 15px;
+}
+
+.postsrightbox .topcard {
+  margin: 15px 15px 25px 15px;
+}
+
+.postsrightbox .postphoto {
+  height: 115px;
+}
+
+.toptitle h5 {
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 2rem;
+  font-weight: 500;
+}
+
+.toptitle a {
+    color: #222;
+}
+
+.toptitle a:hover {
+    color: #0f65ef;
+    transition: color .15s ease 0s;
+}
+
+/* ---------- footer ---------- */
+.footer{
+  height: 50px;
+}
+
+/* ---------- signin ---------- */
+.signin {
+  padding-top: 35px;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading {
+    margin-bottom: 20px;
+}
+
+.form-signin input[type="text"] {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* ---------- signup ---------- */
+.signup {
+  padding-top: 35px;
+  font-size: 1.5rem;
+}
+
+/* ---------- creat & edit---------- */
+.creatcont,.editcont {
+  padding-top: 35px;
+  font-size: 1.6rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+/* ---------- post-content-single ---------- */
+.post-content-single {
+  background-color: #fff;
+}
+
+.singlecontent {
+  padding: 0 5rem;
+}
+
+@media screen and (max-width: 767px) {
+    .singlecontent {
+      padding: 0;
+    }
+}
+
+.singletitle h3 {
+  text-align: left;
+  color: #222;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.singletitle p {
+  font-size: 18px;
+  line-height: 2.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    .singletitle h3 {
+    text-align: left;
+    color: #222;
+    font-size: 2.3rem;
+    line-height: 1.3;
+    font-weight: 500;
+    margin-top: 1.35rem;
+    margin-bottom: 0.5rem;
+    }
+}
+
+.singlerightbtm {
+  font-size: 1.5rem;
+}
+
+.sinnewstime,.sinnewsedit {
+    height: 50px;
+    margin: auto 0;
+    line-height: 50px;
+    text-align: center;
+    overflow: hidden;
+    color: #999;
+}
+
+.sinnewsedit {
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+    .sinnewstime {
+    line-height: 40px;
+    }
+}
+
+.sinnewseditor {
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+    .sinnewseditor {
+    height: 40px;
+    line-height: 40px;
+    }
+}
+
+.sinnewseditor a {
+    font-size: 1.8rem;
+    color: #0f65ef;
+}
+
+@media screen and (max-width: 767px) {
+    .sinnewseditor a {
+    font-size: 1.8rem;
+    }
+}
+
+.sinavaimg {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+    .sinavaimg {
+    width: 37px;
+    height: 37px;
+    }
+}
+
+.sinphoto {
+  margin: 2.5rem auto;
+}
+
+@media screen and (max-width: 767px) {
+    .sinphoto {
+    margin: 0.5rem auto 2rem auto;
+    }
+}
+
+.postcontent {
+  font-size: 16px;
+  line-height: 2.3rem;
+}
+
+/* ---------- 移动端首页 ---------- */
+@media screen and (max-width: 767px) {
+    .shouyecontainer {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: -5px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .shouyecontainer .row {
+    margin-left: 0;
+    margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .postsleft {
+    padding-left: 0;
+    padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 767px){
+  .hotcard .postphoto {
+    height: 128px;
+  }  
+}
+
+@media screen and (max-width: 767px){
+  .hottitle {
+    height: 134px;
+    margin-left: 15px;
+    margin-right: 20px;
+  }  
+}
+
+@media screen and (max-width: 767px){
+  .hottitle h3 {
+    font-size: 21px;
+    margin-top: 0;
+    line-height: 2.3rem;
+    height: 55px;
+  }  
+}
+
+@media screen and (max-width: 767px){
+  .hottitle p {
+    height: 72px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }  
+}
+
+@media screen and (max-width: 767px){
+  .hotcard {
+    height: 285px;
+    border-radius: 0;
+    border: none;
+  }  
+}
+
+@media screen and (max-width: 767px){
+  .cardleft {
+    padding-left: 0;
+  }  
+}
+
+@media screen and (max-width: 767px){
+  .notification {
+    display: none;
+  }  
+}
