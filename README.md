@@ -1,7 +1,11 @@
 # NewsExpress·新闻速递
-NewsExpress一个新闻网站，二次开发[N-blog（多人博客）](https://github.com/nswbmw/N-blog)，所以这是一个可供若干编辑/记者发布新闻和访客浏览新闻的网站哈哈。 
+NewsExpress是一个可供若干编辑/记者发布新闻和访客浏览新闻的网站，二次开发[N-blog（多人博客）](https://github.com/nswbmw/N-blog)。 使用Bootstrap实现前端页面的设计，适配移动，PC端。
 
-使用Bootstrap实现前端页面的设计，适配移动，PC端。
+## 主要修改
+* 全网站的前端设计
+* 适配移动，PC端
+* 首页增加热门新闻栏
+* 新闻可以增加副标题，上传照片
 
 ## 环境准备
 * [Node.js](https://github.com/nswbmw/N-blog/blob/master/book/1.1%20Node.js%20%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8.md) 
